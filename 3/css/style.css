@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+}
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page__body {
+  margin: 0 auto;
+  width: 320px;
+  min-height: 100%;
+}
+.reasons__item--color {
+  background-color: #81b3d2;
+}
+.reasons__list--insert {
+  background-color: #ffffff;
+}
+.reasons__offer {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.reasons__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.reasons__number {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.reasons__description--color {
+  color: #ffffff;
+}
+.reasons__number--color {
+  color: #ffffff;
+}
+.heading-index {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.heading-index--color {
+  color: #ffffff;
+}
+.offer__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.offer__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.copyright__title {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
