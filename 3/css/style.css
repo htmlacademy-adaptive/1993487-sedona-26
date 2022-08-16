@@ -2,28 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/fonts/ptsans.woff2") format("woff2");
+  src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  src: local("PT Sans"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 html {
@@ -42,10 +28,45 @@ body {
   width: 320px;
   min-height: 100%;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .reset-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.navigation__link {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation__item {
+  background-color: #81b3d2;
+}
+.main-index__header {
+  background-color: #acd3e3;
+  background-image: url("../images/background-for-promo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: center;
+  padding: 90px 19px 85px;
+}
+.reasons__list {
+  background-color: #eeeeee;
 }
 .reasons__item--color {
   background-color: #81b3d2;
@@ -64,6 +85,10 @@ body {
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+  margin: 0;
+}
+.reasons__description--color {
+  color: #ffffff;
 }
 .reasons__number {
   font-weight: 400;
@@ -71,11 +96,11 @@ body {
   color: #333333;
   text-align: center;
 }
-.reasons__description--color {
-  color: #ffffff;
-}
 .reasons__number--color {
   color: #ffffff;
+}
+.reasons__image {
+  display: block;
 }
 .heading-index {
   font-weight: 700;
@@ -83,6 +108,7 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
 .heading-index--color {
   color: #ffffff;
@@ -100,11 +126,79 @@ body {
   color: #333333;
   text-align: center;
 }
+.invitation__link {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
 .copyright__title {
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+.catalog-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.catalog__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.catalog__item {
+  padding: 0 20px;
+}
+.foto-card__description,
+.foto-card__like {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.foto-card__author {
+  font-weight: 400;
+  color: #333333;
+}
+.presentation__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.feedback__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.field__label {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+.field__input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.field__input::-webkit-input-placeholder {
+  color: #000000;
+}
+.field__input--color::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.control__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 }
 .button {
   font-weight: 700;
@@ -115,5 +209,11 @@ body {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+}
+.modal__description {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
