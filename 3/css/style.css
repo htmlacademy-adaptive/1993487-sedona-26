@@ -12,21 +12,20 @@
   src: local("PT Sans"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
-html {
+.page {
   height: 100%;
-}
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
-  margin: 0;
 }
 .page__body {
   margin: 0 auto;
   width: 320px;
   min-height: 100%;
+}
+.page-body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
 }
 .visually-hidden {
   position: absolute;
@@ -40,8 +39,9 @@ body {
 }
 .reset-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 .navigation__link {
   display: block;
@@ -58,7 +58,7 @@ body {
 }
 .main-index__header {
   background-color: #acd3e3;
-  background-image: url("../images/background-for-promo.png");
+  background-image: url("../img/background-for-promo.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -68,11 +68,11 @@ body {
 .reasons__list {
   background-color: #eeeeee;
 }
-.reasons__item--color {
-  background-color: #81b3d2;
-}
 .reasons__list--insert {
   background-color: #ffffff;
+}
+.reasons__item--color {
+  background-color: #81b3d2;
 }
 .reasons__offer {
   font-weight: 400;
@@ -140,13 +140,6 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.catalog-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-}
 .catalog__description {
   font-weight: 400;
   text-transform: uppercase;
@@ -155,6 +148,13 @@ body {
 }
 .catalog__item {
   padding: 0 20px;
+}
+.catalog-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .foto-card__description,
 .foto-card__like {
