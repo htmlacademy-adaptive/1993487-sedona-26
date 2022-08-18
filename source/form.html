@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Формы</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" width="185" height="96" alt="Логотип Седона.">
+        <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
       <nav class="main-header__navigation navigation">
         <button class="navigation__toggle header-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list">
+        <ul class="navigation__list reset-list">
           <li class="navigation__item navigation__item--active">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -34,11 +35,11 @@
         <h1 class="visually-hidden">Sedona.</h1>
       </header>
       <section class="feedback">
-        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <h2 class="feedback__title heading-index">Оставьте свой отзыв</h2>
         <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__group">
-            <legend class="form__title">Представьтесь:</legend>
+            <legend class="form__title heading-index">Представьтесь:</legend>
             <p class="form__field-group field">
               <label class="field__label" for="user-name">Имя*:</label>
               <input class="field__input" type="text" id="user-name" name="user-name" placeholder="Пётр" required>
@@ -53,18 +54,18 @@
             </p>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__title">Контактная информация:</legend>
+            <legend class="form__title heading-index">Контактная информация:</legend>
             <p class="form__field-group field">
               <label class="field__label" for="user-phone">Контактный телефон*:</label>
-              <input class="field__input" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
+              <input class="field__input field__input--color" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
             </p>
             <p class="form__field-group field">
               <label class="field__label" for="user-email">Электронная почта*:</label>
-              <input class="field__input" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+              <input class="field__input field__input--color" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__title">Ваше Общее впечатление:</legend>
+            <legend class="form__title heading-index">Ваше Общее впечатление:</legend>
             <ul class="control-container form__list form__radio">
               <li class="form__item">
                 <label class="control radio">
@@ -90,7 +91,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <legend class="form__title heading-index">Посещенные достопримечательности:</legend>
             <ul class="control-container form__list form__checkbox">
               <li class="form__item">
                 <label class="control checkbox">
@@ -123,8 +124,8 @@
             </ul>
           </fieldset>
           <p class="form__group field">
-            <label class="form__title" for="user-message">Опишите свои эмоции:</label>
-            <textarea class="field__input" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label class="form__title heading-index" for="user-message">Опишите свои эмоции:</label>
+            <textarea class="field__input field__input--color" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <span class="form__note"><sup>*</sup>— обязательные поля</span>
@@ -164,14 +165,14 @@
     </footer>
     <div class="modal">
       <div class="modal__wrapper">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <h2 class="modal__title heading-index">Что-то пошло не так!</h2>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal__button button" type="button">Ok</button>
       </div>
     </div>
     <div class="modal">
       <div class="modal__wrapper modal__wrapper--below">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <h2 class="modal__title heading-index">Ваш отзыв отправлен!</h2>
         <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button class="modal__button button" type="button">Закрыть окно</button>
       </div>
