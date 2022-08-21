@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -14,18 +15,18 @@
         <button class="navigation__toggle header-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list reset-list">
+        <ul class="navigation__list navigation__list--color reset-list">
           <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link--color" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+            <a class="navigation__link navigation__link--color" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation__item navigation__item--form">
+            <a class="navigation__link navigation__link--color" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
+            <a class="navigation__link navigation__link--color" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -39,43 +40,47 @@
         <h2 class="reasons__title heading-index">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
         <p class="reasons__offer">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="reasons__list reset-list">
-          <li class="reasons__item reasons__item--color">
-            <h3 class="reasons__title-block heading-index heading-index--color">Настоящий городок</h3>
-            <p class="reasons__number reasons__number--color">— №1 —</p>
-            <p class="reasons__description reasons__description--color">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="reasons__image" src="./img/view-sedona-1.jpg" width="320" height="260" alt="Вид Седоны 1.">
-            <ul class="reasons__list reasons__list--insert reset-list">
-              <li class="reasons__item reasons__item--list reasons__item--house">
+          <li class="reasons__item reasons__item--color reasons__item--list-first">
+            <div class="reasons__wrapper">
+              <h3 class="reasons__title-block heading-index heading-index--color">Настоящий городок</h3>
+              <p class="reasons__number reasons__number--color">— №1 —</p>
+              <p class="reasons__description reasons__description--color">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="reasons__image reasons__image--first" src="./img/view-sedona-1.jpg" width="320" height="260" alt="Вид Седоны 1.">
+            <ul class="reasons__sublist reset-list">
+              <li class="reasons__item reasons__item--house">
                 <h3 class="reasons__title-block heading-index">Жильё</h3>
                 <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="reasons__item reasons__item--list reasons__item--food">
+              <li class="reasons__item reasons__item--food">
                 <h3 class="reasons__title-block heading-index">Еда</h3>
-                <p class="reasons__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="reasons__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </li>
-              <li class="reasons__item reasons__item--list reasons__item--souvenirs">
+              <li class="reasons__item reasons__item--souvenirs">
                 <h3 class="reasons__title-block heading-index">Сувениры</h3>
-                <p class="reasons__description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="reasons__description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="reasons__item reasons__item--color">
-            <h3 class="reasons__title-block heading-index heading-index--color">Там есть мост дьявола</h3>
-            <p class="reasons__number reasons__number--color">— №2 —</p>
-            <p class="reasons__description reasons__description--color">Да, по нему можно пройти! Если вы осмелитесь,<br> разумеется</p>
+          <li class="reasons__item reasons__item--color reasons__item--list-second">
+            <div class="reasons__wrapper reasons__wrapper--second">
+              <h3 class="reasons__title-block heading-index heading-index--color">Там есть мост дьявола</h3>
+              <p class="reasons__number reasons__number--color">— №2 —</p>
+              <p class="reasons__description reasons__description--color">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <img class="reasons__image" src="./img/view-sedona-2.jpg" width="320" height="260" alt="Вид Седоны 2.">
           </li>
-          <li class="reasons__item reasons__item--list-number">
+          <li class="reasons__item reasons__item--list-third">
             <h3 class="reasons__title-block heading-index">Небольшая площадь</h3>
             <p class="reasons__number">— №3 —</p>
-            <p class="reasons__description">Все достопримечательности находятся очень близко</p>
+            <p class="reasons__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="reasons__item reasons__item--list-number">
+          <li class="reasons__item reasons__item--list-fourth">
             <h3 class="reasons__title-block heading-index">Красивая дорога</h3>
             <p class="reasons__number">— №4 —</p>
-            <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reasons__description">Ехать в Седону из<br> Лас-Вегаса совсем не&nbspскучно!</p>
           </li>
-          <li class="reasons__item reasons__item--list-number">
+          <li class="reasons__item reasons__item--list-fifth">
             <h3 class="reasons__title-block heading-index">Мало <br>туристов</h3>
             <p class="reasons__number">— №5 —</p>
             <p class="reasons__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -84,7 +89,7 @@
       </section>
       <section class="offer">
         <h2 class="offer__title">Заинтересовались?</h2>
-        <p class="offer__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="offer__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="offer__search button">Найти гостиницу</a>
       </section>
       <section class="map">

@@ -9,6 +9,38 @@
   color: #ffffff;
 }
 
-.navigation__item {
+.navigation__list {
   background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__list {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+  }
+
+  .navigation__item--form {
+    grid-column: 4/5;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation__list--color {
+    background-color: #ffffff;
+  }
+
+  .navigation__link--color {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
