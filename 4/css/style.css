@@ -116,6 +116,20 @@
     padding: 77px 154px 91px 153px;
   }
 }
+.main-inner__header {
+  background-color: #acd3e3;
+  background-image: url("../img/background-inner-page.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: center;
+  padding: 52px 45px 67px;
+}
+@media (min-width: 768px) {
+  .main-inner__header {
+    padding: 95px 155px 117px;
+  }
+}
 .reasons__list {
   background-color: #eeeeee;
 }
@@ -290,8 +304,31 @@
   color: #333333;
   text-align: center;
 }
-.catalog__item {
+.catalog {
   padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .catalog {
+    padding: 0 60px;
+  }
+  .catalog__header {
+    padding: 66px 0 67px;
+    width: 100%;
+    max-width: 458px;
+    margin: 0 auto;
+  }
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  .catalog__item {
+    padding: 0;
+  }
+  .catalog__item--space {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 }
 .catalog-title {
   font-weight: 700;
@@ -304,10 +341,20 @@
 .foto-card__like {
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
 }
 .foto-card__author {
   font-weight: 400;
   color: #333333;
+  margin: 0;
+}
+.foto-card__image {
+  display: block;
+}
+@media (min-width: 768px) {
+  .foto-card__wrapper {
+    background-color: #f2f2f2;
+  }
 }
 .presentation__description {
   font-weight: 400;
@@ -315,23 +362,131 @@
   color: #333333;
   text-align: center;
 }
+.presentation {
+  padding: 0 20px;
+}
+.presentation__header {
+  padding: 17px 0 38px;
+  width: 100%;
+  max-width: 266px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .presentation {
+    padding: 0 60px;
+  }
+  .presentation__header {
+    padding: 58px 0 66px;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+  }
+}
 .feedback__description {
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
   text-align: center;
 }
+.feedback {
+  padding: 0 20px;
+}
+.feedback__header {
+  padding: 36px 0 53px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .feedback__header {
+    padding: 64px 0 102px;
+    width: 100%;
+    max-width: 435px;
+    margin: 0 auto;
+  }
+  .feedback {
+    padding: 0 60px;
+  }
+}
+.form__group {
+  border: 0;
+  margin: 0;
+  padding-bottom: 59px;
+}
+.form__group--first {
+  padding-bottom: 64px;
+}
+.form__button {
+  width: 281px;
+  padding: 18px 34px 13px 32px;
+}
+.form__note {
+  padding-left: 143px;
+}
+@media (min-width: 768px) {
+  .form__wrapper-contacts {
+    display: flex;
+  }
+  .form__group--contacts {
+    width: 324px;
+  }
+  .form__field-group--contacts {
+    padding-left: 44px;
+  }
+  .form__title--introduce {
+    text-align: start;
+    padding-left: 81px;
+  }
+  .form__title--contacts {
+    text-align: start;
+    padding-left: 26px;
+  }
+  .form__radio {
+    display: grid;
+    padding: 0 36px;
+    grid-template-columns: repeat(2, 280px);
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+  .form__checkbox {
+    display: grid;
+    padding: 0 84px;
+    grid-template-columns: repeat(2, 224px);
+    row-gap: 16px;
+    column-gap: 32px;
+  }
+  .form__button {
+    width: 324px;
+    padding: 18px 60px 13px 49px;
+  }
+  .form__note {
+    padding-left: 185px;
+  }
+  .form__group--feedback {
+    display: flex;
+    flex-direction: column;
+    width: 648px;
+  }
+}
 .field__label {
   font-weight: 400;
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+  padding-left: 16px;
+}
+.field {
+  margin: 0;
 }
 .field__input {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-color: #f2f2f2f2;
+  width: 248px;
+  padding: 16px;
+  border: 0;
 }
 .field__input::-webkit-input-placeholder {
   color: #000000;
@@ -339,10 +494,52 @@
 .field__input--color::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 768px) {
+  .field__input--size {
+    padding-bottom: 118px;
+    width: 648px;
+  }
+}
+.control {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  margin-bottom: 26px;
+}
 .control__label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+.control__icon {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+}
+.control__icon--radio {
+  border-radius: 50%;
+}
+.control__input:checked + .control__icon::before {
+  position: absolute;
+  content: " ";
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 14px;
+  background-image: url("../img/small-icons/tick.svg");
+}
+.control__input:checked + .control__icon--radio::before {
+  position: absolute;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: #333333;
 }
 .button {
   font-weight: 700;

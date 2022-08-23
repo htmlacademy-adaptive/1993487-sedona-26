@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/1993487-sedona-26/4/">
 </head>
-  <body class="page__body">
+  <body class="page__body page-body">
     <header class="main-header">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона.">
@@ -16,32 +16,36 @@
         <button class="navigation__toggle header-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list reset-list">
+        <ul class="navigation__list navigation__list--color reset-list">
           <li class="navigation__item navigation__item--active">
-            <a class="navigation__link" href="index.html">Главная</a>
+            <a class="navigation__link navigation__link--color" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+            <a class="navigation__link navigation__link--color " href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="navigation__item navigation__item--form">
+            <a class="navigation__link navigation__link--color" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
+            <a class="navigation__link navigation__link--color" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <header class="header">
+    <main class="main-inner">
+      <header class="main-inner__header hero-inner-page">
         <h1 class="visually-hidden">Sedona.</h1>
+        <img class="hero-inner-page__image" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
       </header>
       <section class="feedback">
-        <h2 class="feedback__title heading-index">Оставьте свой отзыв</h2>
-        <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="feedback__header">
+          <h2 class="feedback__title heading-index">Оставьте свой отзыв</h2>
+          <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group">
-            <legend class="form__title heading-index">Представьтесь:</legend>
+          <div class="form__wrapper-contacts">
+          <fieldset class="form__group form__group--first form__group--contacts">
+            <legend class="form__title form__title--introduce heading-index">Представьтесь:</legend>
             <p class="form__field-group field">
               <label class="field__label" for="user-name">Имя*:</label>
               <input class="field__input" type="text" id="user-name" name="user-name" placeholder="Пётр" required>
@@ -55,38 +59,39 @@
               <input class="field__input" type="text" id="user-patronymic" name="user-patronymic" placeholder="Викторович">
             </p>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__title heading-index">Контактная информация:</legend>
-            <p class="form__field-group field">
+          <fieldset class="form__group form__group--contacts">
+            <legend class="form__title form__title--contacts heading-index">Контактная информация:</legend>
+            <p class="form__field-group form__field-group--contacts field">
               <label class="field__label" for="user-phone">Контактный телефон*:</label>
-              <input class="field__input field__input--color" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
+              <input class="field__input field__input--color field__input--icon" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон" required>
             </p>
-            <p class="form__field-group field">
+            <p class="form__field-group form__field-group--contacts field">
               <label class="field__label" for="user-email">Электронная почта*:</label>
-              <input class="field__input field__input--color" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
+              <input class="field__input field__input--color field__input--icon" type="email" id="user-email" name="user-email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
+          </div>
           <fieldset class="form__group">
             <legend class="form__title heading-index">Ваше Общее впечатление:</legend>
-            <ul class="control-container form__list form__radio">
+            <ul class="form__list form__radio reset-list">
               <li class="form__item">
                 <label class="control radio">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="positive" checked>
-                  <span class="control__icon"></span>
+                  <span class="control__icon control__icon--radio"></span>
                   <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control radio">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="negative">
-                  <span class="control__icon"></span>
+                  <span class="control__icon control__icon--radio"></span>
                   <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="control radio">
                   <input class="visually-hidden control__input" type="radio" name="impression" value="no-answer">
-                  <span class="control__icon"></span>
+                  <span class="control__icon control__icon--radio"></span>
                   <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
@@ -94,7 +99,7 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__title heading-index">Посещенные достопримечательности:</legend>
-            <ul class="control-container form__list form__checkbox">
+            <ul class="form__list form__checkbox reset-list">
               <li class="form__item">
                 <label class="control checkbox">
                   <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
@@ -125,9 +130,9 @@
               </li>
             </ul>
           </fieldset>
-          <p class="form__group field">
+          <p class="form__group form__group--feedback field">
             <label class="form__title heading-index" for="user-message">Опишите свои эмоции:</label>
-            <textarea class="field__input field__input--color" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="field__input field__input--color field__input--size" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
           <button class="form__button button" type="submit">Отправить отзыв</button>
           <span class="form__note"><sup>*</sup>— обязательные поля</span>
