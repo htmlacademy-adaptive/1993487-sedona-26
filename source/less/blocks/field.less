@@ -1,5 +1,10 @@
 .field__label {
   .identical-styles();
+  padding-left: 16px;
+}
+
+.field {
+  margin: 0;
 }
 
 .field__input {
@@ -7,6 +12,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-color: #f2f2f2f2;
+  width: 248px;
+  padding: 16px;
+  border: 0;
 }
 
 .field__input::-webkit-input-placeholder {
@@ -15,4 +24,11 @@
 
 .field__input--color::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .field__input--size {
+    padding-bottom: 118px;
+    width: 648px;
+  }
 }
