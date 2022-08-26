@@ -1,16 +1,16 @@
-.main-index__header {
+.main-inner__header {
   position: relative;
   background-color: #acd3e3;
-  background-image: url("../img/background-for-promo.png");
+  background-image: url("../img/background-inner-page.png");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
-  padding: 90px 19px 85px;
+  padding: 52px 45px 67px;
   z-index: -1;
 }
 
-.main-index__header::after {
+.main-inner__header::after {
   position: absolute;
   content: url("../img/add-background-mobile.svg");
   left: 0;
@@ -18,19 +18,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-index__header {
+  .main-inner__header {
     position: relative;
-    padding: 77px 0 91px;
+    padding: 95px 0 117px;
   }
 
-  .main-index__header::after {
+  .main-inner__header::after {
     position: absolute;
     content: url("../img/add-background-promo.svg");
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-index__header {
-    padding: 78px 0 90px;
+  .main-inner__header {
+    padding: 101px 0 120px;
   }
 }

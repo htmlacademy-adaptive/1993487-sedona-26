@@ -1,5 +1,46 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  margin-bottom: 26px;
+}
+
 .control__label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.control__icon {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.control__input:checked + .control__icon::before {
+  position: absolute;
+  content: " ";
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 14px;
+  background-image: url("../img/small-icons/tick.svg");
+}
+
+.control__input:checked + .control__icon--radio::before {
+  position: absolute;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: #333333;
 }
