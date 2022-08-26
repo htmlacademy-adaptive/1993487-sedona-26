@@ -1,5 +1,10 @@
 .presentation__description {
   .identical-styles();
+  margin: 0;
+}
+
+.presentation__title {
+  margin: 0 0 27px;
 }
 
 .presentation {
@@ -18,8 +23,21 @@
     padding: 0 60px;
   }
 
+  .presentation__title {
+    margin: 0 0 25px;
+  }
+
   .presentation__header {
-    padding: 58px 0 66px;
+    padding: 62px 0 70px;
+    width: 100%;
+    max-width: 445px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation__header {
+    padding: 61px 0 63px;
     width: 100%;
     max-width: 445px;
     margin: 0 auto;

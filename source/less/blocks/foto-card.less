@@ -8,7 +8,7 @@
 .foto-card__author {
   font-weight: 400;
   color: #333333;
-  margin: 0;
+  margin: 0 0 11px;
 }
 
 .foto-card__image {
@@ -17,6 +17,38 @@
 
 @media (min-width: @tablet-width) {
   .foto-card__wrapper {
+    display: flex;
+    align-items: center;
     background-color: #f2f2f2;
+    padding: 22px 20px 15px;
+  }
+
+  .foto-card__author {
+    margin: 0;
+  }
+
+  .foto-card__like {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .foto-card__wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 360px;
+
+    &--space {
+      width: 1159px;
+      padding: 22px 20px 15px 21px;
+    }
+  }
+
+  .foto-card__author,
+  .foto-card__description,
+  .foto-card__like {
+    color: #ffffff;
   }
 }

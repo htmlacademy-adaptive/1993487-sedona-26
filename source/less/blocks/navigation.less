@@ -7,6 +7,12 @@
   text-align: center;
   text-decoration: none;
   color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 12px;
+
+  &--gradient {
+    background: linear-gradient(180deg, #81b3d2 48px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
 }
 
 .navigation__list {
@@ -32,6 +38,8 @@
   .navigation__link {
     display: flex;
     justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 
   .navigation__list--color {
@@ -42,5 +50,17 @@
     color: #000000;
     font-size: 14px;
     line-height: 21px;
+    background: #ffffff;
+  }
+
+  .navigation__link--active {
+    color: #766357;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation__list {
+    display: grid;
+    grid-template-columns: repeat(5, 240px);
   }
 }

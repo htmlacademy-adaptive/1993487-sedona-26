@@ -4,21 +4,50 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 19px;
 }
 
 .offer__description {
   .identical-styles();
+  margin: 0 0 32px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  padding: 38px 18px 49px;
+}
+
+.offer__search {
+  width: 186px;
+  padding: 16px 49px;
 }
 
 @media (min-width: @tablet-width) {
   .offer {
-    display: flex;
-    flex-direction: column;
     padding: 61px 155px 58px;
   }
 
-  .offer__search {
+  .offer__title {
+    margin: 0 0 24px;
+  }
+
+  .offer__description {
+    margin: 0 0 40px;
+  }
+
+  .offer__search--size {
     width: 216px;
     padding: 14px 121px 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    padding: 61px 371px 66px;
+  }
+
+  .offer__description {
+    margin: 0 0 45px;
   }
 }

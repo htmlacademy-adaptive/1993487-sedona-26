@@ -1,4 +1,5 @@
 .main-index__header {
+  position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-for-promo.png");
   background-size: cover;
@@ -6,10 +7,30 @@
   max-width: 100%;
   background-position: center;
   padding: 90px 19px 85px;
+  z-index: -1;
+}
+
+.main-index__header::after {
+  position: absolute;
+  content: url("../img/add-background-mobile.svg");
+  left: 0;
+  bottom: -6px;
 }
 
 @media (min-width: @tablet-width) {
   .main-index__header {
-    padding: 77px 154px 91px 153px;
+    position: relative;
+    padding: 77px 0 91px;
+  }
+
+  .main-index__header::after {
+    position: absolute;
+    content: url("../img/add-background-promo.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-index__header {
+    padding: 78px 0 90px;
   }
 }

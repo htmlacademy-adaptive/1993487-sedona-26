@@ -1,16 +1,16 @@
 .feedback__description {
   .identical-styles();
+  margin: 0;
 }
 
-.feedback {
-  padding: 0 20px;
+.feedback__title {
+  margin: 0 0 24px;
 }
 
 .feedback__header {
-  padding: 36px 0 53px;
-  width: 100%;
-  max-width: 280px;
-  margin: 0 auto;
+  padding: 36px 20px 28px;
+  width: 280px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,9 +19,28 @@
     width: 100%;
     max-width: 435px;
     margin: 0 auto;
+    border-bottom: none;
+  }
+
+  .feedback__title {
+    margin: 0 0 20px;
   }
 
   .feedback {
     padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback__header {
+    padding: 115px 0 66px;
+  }
+
+  .feedback__title {
+    margin: 0 0 24px;
+  }
+
+  .feedback {
+    padding: 0 120px;
   }
 }

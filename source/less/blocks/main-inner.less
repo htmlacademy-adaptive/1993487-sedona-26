@@ -1,4 +1,5 @@
 .main-inner__header {
+  position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-inner-page.png");
   background-size: cover;
@@ -6,10 +7,31 @@
   max-width: 100%;
   background-position: center;
   padding: 52px 45px 67px;
+  z-index: -1;
+}
+
+.main-inner__header::after {
+  position: absolute;
+  content: url("../img/add-background-mobile.svg");
+  left: 0;
+  bottom: -6px;
 }
 
 @media (min-width: @tablet-width) {
   .main-inner__header {
-    padding: 95px 155px 117px;
+    position: relative;
+    padding: 95px 0 117px;
+  }
+
+  .main-inner__header::after {
+    position: absolute;
+    content: url("../img/add-background-promo.svg");
   }
 }
+
+@media (min-width: @desktop-width) {
+  .main-inner__header {
+    padding: 101px 0 120px;
+  }
+}
+
