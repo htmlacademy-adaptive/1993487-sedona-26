@@ -1,50 +1,145 @@
 .form__group {
+  position: relative;
   border: 0;
   margin: 0;
-  padding: 48px 20px;
+  padding: 0 20px 24px;
+  border-bottom: 1px solid #e5e5e5;
 
-  &--first {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  &--introduce {
     padding-bottom: 39px;
   }
 
-  &--second {
+  @media (min-width: @tablet-width) {
+    width: 323px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
+
+  &--contacts {
     padding-bottom: 34px;
   }
-}
 
-.form__button {
-  width: 281px;
-  padding: 18px 34px 13px 32px;
-}
-
-.form__note {
-  padding-left: 143px;
-}
-
-@media (min-width: @tablet-width) {
-  .form__wrapper-contacts {
-    display: flex;
-  }
-
-  .form__group--contacts {
+  @media (min-width: @tablet-width) {
     width: 324px;
   }
 
-  .form__field-group--contacts {
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--impression {
+      padding-bottom: 48px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--places {
+      padding-bottom: 42px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
+  }
+
+  &--feedback {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--feedback {
+      display: flex;
+      flex-direction: column;
+      width: 648px;
+      padding-bottom: 64px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--feedback {
+      width: 768px;
+      padding: 0 96px 64px;
+    }
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.form__title {
+  padding-top: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    margin-bottom: 28px;
+  }
+
+  &--label {
+    display: block;
+  }
+}
+
+.form__field-group--phone::after {
+  position: absolute;
+  content: url("../img/small-icons/phone.svg");
+  width: 58px;
+  height: 58px;
+  right: 20px;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 5px;
+  }
+}
+
+.form__field-group--mail::after {
+  position: absolute;
+  content: url("../img/small-icons/mail.svg");
+  width: 58px;
+  height: 58px;
+  right: 20px;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 5px;
+  }
+}
+
+.form__field-group--contacts {
+  @media (min-width: @tablet-width) {
     padding-left: 44px;
   }
+}
 
-  .form__title--introduce {
-    text-align: start;
-    padding-left: 81px;
-  }
-
-  .form__title--contacts {
-    text-align: start;
-    padding-left: 26px;
-  }
-
-  .form__radio {
+.form__radio {
+  @media (min-width: @tablet-width) {
     display: grid;
     padding: 0 36px;
     grid-template-columns: repeat(2, 280px);
@@ -52,7 +147,15 @@
     column-gap: 16px;
   }
 
-  .form__checkbox {
+  @media (min-width: @desktop-width) {
+    padding: 17px 53px;
+    grid-template-columns: repeat(3, 280px);
+    column-gap: 28px;
+  }
+}
+
+.form__checkbox {
+  @media (min-width: @tablet-width) {
     display: grid;
     padding: 0 84px;
     grid-template-columns: repeat(2, 224px);
@@ -60,18 +163,39 @@
     column-gap: 32px;
   }
 
-  .form__button {
+  @media (min-width: @desktop-width) {
+    padding: 31px 44px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 64px;
+  }
+}
+
+.form__button {
+  width: 281px;
+  padding: 18px 34px 13px 32px;
+  margin-top: 56px;
+
+  @media (min-width: @tablet-width) {
     width: 324px;
     padding: 18px 60px 13px 49px;
+    margin-top: 48px;
   }
 
-  .form__note {
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    padding-right: 71px;
+    padding-left: 58px;
+  }
+}
+
+.form__note {
+  padding-left: 143px;
+
+  @media (min-width: @tablet-width) {
     padding-left: 185px;
   }
 
-  .form__group--feedback {
-    display: flex;
-    flex-direction: column;
-    width: 648px;
+  @media (min-width: @desktop-width) {
+    padding-left: 244px;
   }
 }

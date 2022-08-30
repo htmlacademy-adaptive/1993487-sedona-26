@@ -1,19 +1,23 @@
-.feedback__description {
-  .identical-styles();
-  margin: 0;
-}
-
-.feedback__title {
-  margin: 0 0 24px;
-}
-
 .feedback__header {
   padding: 36px 20px 28px;
   width: 280px;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.feedback__title {
+  margin: 0 0 24px;
+}
+
+.feedback__description {
+  .identical-styles();
+  margin: 0;
+}
+
 @media (min-width: @tablet-width) {
+  .feedback {
+    padding: 0 60px;
+  }
+
   .feedback__header {
     padding: 64px 0 102px;
     width: 100%;
@@ -25,22 +29,18 @@
   .feedback__title {
     margin: 0 0 20px;
   }
-
-  .feedback {
-    padding: 0 60px;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .feedback {
+    padding: 0 120px;
+  }
+
   .feedback__header {
     padding: 115px 0 66px;
   }
 
   .feedback__title {
     margin: 0 0 24px;
-  }
-
-  .feedback {
-    padding: 0 120px;
   }
 }

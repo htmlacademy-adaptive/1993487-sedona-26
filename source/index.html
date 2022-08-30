@@ -8,25 +8,25 @@
   </head>
   <body class="page__body page-body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
-      <nav class="main-header__navigation navigation">
-        <button class="navigation__toggle header-button" type="button">
+      <nav class="main-header__navigation navigation navigation--closed">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list navigation__list--color reset-list">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--color navigation__link--active" href="index.html">Главная</a>
+        <ul class="navigation__list reset-list">
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--color" href="catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item navigation__item--form">
-            <a class="navigation__link navigation__link--color" href="form.html">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--gradient navigation__link--color" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
+          <li class="navigation__item navigation__item--academy">
+            <a class="navigation__link " href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,7 @@
             <div class="reasons__wrapper">
               <h3 class="reasons__title-block heading-index heading-index--color">Настоящий <br class="reasons-br"> городок</h3>
               <p class="reasons__number reasons__number--color">— №1 —</p>
-              <p class="reasons__description reasons__description--color">Седона не аттракцион для туристов, там&nbspтечёт своя жизнь</p>
+              <p class="reasons__description reasons__description--color">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
             </div>
             <img class="reasons__image reasons__image--first" src="./img/view-sedona-1.jpg" width="320" height="260" alt="Вид Седоны 1.">
             <ul class="reasons__sublist reset-list">
@@ -56,7 +56,7 @@
               </li>
               <li class="reasons__item reasons__item--food">
                 <h3 class="reasons__title-block reasons__title-block--sublist heading-index">Еда</h3>
-                <p class="reasons__description reasons__description--location">Всегда заказывайте фирменный бургер, вы&nbspне&nbspразочаруетесь!</p>
+                <p class="reasons__description reasons__description--location">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </li>
               <li class="reasons__item reasons__item--souvenirs">
                 <h3 class="reasons__title-block reasons__title-block--sublist heading-index">Сувениры</h3>
@@ -68,7 +68,7 @@
             <div class="reasons__wrapper--second">
               <h3 class="reasons__title-block heading-index heading-index--color">Там есть<br class="reasons-br"> мост дьявола</h3>
               <p class="reasons__number reasons__number--color">— №2 —</p>
-              <p class="reasons__description reasons__description--color">Да, по нему можно пройти! Если&nbspвы осмелитесь, конечно</p>
+              <p class="reasons__description reasons__description--color">Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
             </div>
             <img class="reasons__image" src="./img/view-sedona-2.jpg" width="320" height="260" alt="Вид Седоны 2.">
           </li>
@@ -80,7 +80,7 @@
           <li class="reasons__item reasons__item--list-fourth">
             <h3 class="reasons__title-block heading-index">Красивая<br class="reasons-br"> дорога</h3>
             <p class="reasons__number">— №4 —</p>
-            <p class="reasons__description">Ехать в Седону из Лас-&nbspВегаса совсем не&nbspскучно!</p>
+            <p class="reasons__description">Ехать в Седону из Лас-&nbsp;Вегаса совсем не&nbsp;скучно!</p>
           </li>
           <li class="reasons__item reasons__item--list-fifth">
             <h3 class="reasons__title-block heading-index">Мало<br class="reasons-br"> туристов</h3>
@@ -91,14 +91,14 @@
       </section>
       <section class="offer">
         <h2 class="offer__title">Заинтересовались?</h2>
-        <p class="offer__description">Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в седоне</p>
+        <p class="offer__description">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
         <a class="offer__search offer__search--size button">Найти гостиницу</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта.</h2>
-        <a class="map__link" href="#">
-          <img class="map__image" src="./img/map.png" width="320" height="350" alt="Карта.">
-        </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381003.409570094!2d-114.17847591949608!3d34.15245257043848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1661870899918!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта.">
+          </iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -154,5 +154,6 @@
         </a>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
