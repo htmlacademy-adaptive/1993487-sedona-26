@@ -1,13 +1,14 @@
+.field {
+  margin: 0;
+}
+
 .field__label {
   .identical-styles();
   padding-left: 16px;
 }
 
-.field {
-  margin: 0;
-}
-
 .field__input {
+  position: relative;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -15,20 +16,38 @@
   background-color: #f2f2f2f2;
   width: 248px;
   padding: 16px;
+  margin-bottom: 16px;
   border: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 398px;
+  }
+
+  &--change {
+    @media (min-width: @desktop-width) {
+      width: 370px;
+    }
+  }
+
+  &--textarea {
+    padding-bottom: 80px;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 616px;
+      padding-bottom: 118px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 736px;
+    }
+  }
 }
 
 .field__input::-webkit-input-placeholder {
   color: #000000;
 }
 
-.field__input--color::-webkit-input-placeholder {
+.field__input--change::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
-}
-
-@media (min-width: @tablet-width) {
-  .field__input--size {
-    padding-bottom: 118px;
-    width: 648px;
-  }
 }

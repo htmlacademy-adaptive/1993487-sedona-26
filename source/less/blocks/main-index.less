@@ -7,14 +7,17 @@
   max-width: 100%;
   background-position: center;
   padding: 90px 19px 85px;
-  z-index: -1;
 }
 
 .main-index__header::after {
   position: absolute;
-  content: url("../img/add-background-mobile.svg");
+  content: "";
+  background-image: url("../img/add-background-mobile.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
   left: 0;
-  bottom: -6px;
+  bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,13 +27,22 @@
   }
 
   .main-index__header::after {
-    position: absolute;
-    content: url("../img/add-background-promo.svg");
+    background-image: url("../img/add-background-promo.svg");
+    min-width: 768px;
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-index__header {
+    position: relative;
     padding: 78px 0 90px;
+  }
+
+  .main-index__header::after {
+    background-image: url("../img/add-background-promo.svg");
+    background-size: cover;
+    height: 100px;
+    bottom: -11px;
   }
 }

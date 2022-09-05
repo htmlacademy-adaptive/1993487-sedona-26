@@ -1,20 +1,10 @@
+.main-header {
+  position: relative;
+}
+
 .main-header__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.main-header__logo-image {
-  z-index: 1;
-}
-
-@media (min-width: @tablet-width) {
-  .main-header {
-    position: relative;
-  }
-
-  .main-header__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
