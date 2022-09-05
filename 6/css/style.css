@@ -241,6 +241,7 @@
     background-image: url("../img/add-background-promo.svg");
     min-width: 768px;
     width: 100%;
+    bottom: -1px;
   }
 }
 @media (min-width: 1200px) {
@@ -250,7 +251,7 @@
   }
   .main-index__header::after {
     background-image: url("../img/add-background-promo.svg");
-    background-size: 1200px;
+    background-size: contain;
     height: 100px;
     bottom: -11px;
   }
