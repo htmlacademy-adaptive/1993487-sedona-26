@@ -39,7 +39,11 @@
       <main class="main-index">
         <header class="main-index__header hero">
           <h1 class="visually-hidden">Sedona.</h1>
-          <img class="hero__image" src="./img/welcome-promo.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/welcome-promo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/welcome-promo-tablet.svg">
+            <img class="hero__image" src="./img/welcome-promo-phone.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona.">
+          </picture>
         </header>
         <section class="reasons">
           <div class="reasons__header">
