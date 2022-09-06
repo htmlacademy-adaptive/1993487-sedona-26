@@ -216,11 +216,11 @@
   position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-for-promo.png");
-  background-size: cover;
+  background-size: 320px auto;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
-  padding: 90px 19px 85px;
+  padding: 83px 19px 85px;
 }
 .main-index__header::after {
   position: absolute;
@@ -234,7 +234,8 @@
 }
 @media (min-width: 768px) {
   .main-index__header {
-    position: relative;
+    background-image: url("../img/background-tablet.png");
+    background-size: 768px auto;
     padding: 77px 0 91px;
   }
   .main-index__header::after {
@@ -246,7 +247,8 @@
 }
 @media (min-width: 1200px) {
   .main-index__header {
-    position: relative;
+    background-image: url("../img/background-desktop.png");
+    background-size: 1200px auto;
     padding: 78px 0 90px;
   }
   .main-index__header::after {
@@ -298,13 +300,25 @@
     bottom: -11px;
   }
 }
+.hero__image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
 @media (min-width: 768px) {
   .hero__image {
-    display: block;
     margin: 0 auto;
   }
+}
+.hero-inner-page__image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+@media (min-width: 768px) {
   .hero-inner-page__image {
-    display: block;
     margin: 0 auto;
   }
 }
@@ -371,7 +385,8 @@
 }
 .reasons__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   height: auto;
 }
 .reasons__wrapper {
@@ -652,8 +667,8 @@
   }
 }
 .map iframe {
-  border: 0;
   display: block;
+  border: 0;
   margin: 0 auto;
 }
 .page-footer {
@@ -859,7 +874,8 @@
 }
 .foto-card__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: auto;
   height: auto;
 }
 .foto-card__wrapper-like {
@@ -886,6 +902,8 @@
   margin: 0 0 27px;
 }
 .presentation {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
 }
 .presentation__header {
@@ -907,6 +925,9 @@
     max-width: 445px;
     margin: 0 auto;
   }
+  .presentation__video {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1200px) {
   .presentation__header {
@@ -918,11 +939,10 @@
 }
 .video__block {
   display: block;
-  margin: 0 auto;
+  cursor: pointer;
 }
 .video {
   position: relative;
-  cursor: pointer;
 }
 .video__button {
   position: absolute;
