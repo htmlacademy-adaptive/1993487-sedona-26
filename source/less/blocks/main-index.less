@@ -2,11 +2,11 @@
   position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-for-promo.png");
-  background-size: cover;
+  background-size: 320px auto;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
-  padding: 90px 19px 85px;
+  padding: 83px 19px 85px;
 }
 
 .main-index__header::after {
@@ -22,7 +22,8 @@
 
 @media (min-width: @tablet-width) {
   .main-index__header {
-    position: relative;
+    background-image: url("../img/background-tablet.png");
+    background-size: 768px auto;
     padding: 77px 0 91px;
   }
 
@@ -36,7 +37,8 @@
 
 @media (min-width: @desktop-width) {
   .main-index__header {
-    position: relative;
+    background-image: url("../img/background-desktop.png");
+    background-size: 1200px auto;
     padding: 78px 0 90px;
   }
 
