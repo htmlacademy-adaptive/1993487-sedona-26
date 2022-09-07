@@ -18,6 +18,18 @@
   padding: 16px;
   margin-bottom: 16px;
   border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus-within {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 398px;
@@ -50,4 +62,8 @@
 
 .field__input--change::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
 }
