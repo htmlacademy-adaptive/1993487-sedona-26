@@ -2,11 +2,15 @@
   position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-inner-page.png");
-  background-size: cover;
+  background-size: 320px auto;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
   padding: 52px 45px 67px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-inner-page@2x.png");
+  }
 }
 
 .main-inner__header::after {
@@ -22,25 +26,37 @@
 
 @media (min-width: @tablet-width) {
   .main-inner__header {
-    position: relative;
+    background-image: url("../img/background-inner-tablet.png");
+    background-size: 768px auto;
     padding: 95px 0 117px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-inner-tablet@2x.png");
+    }
   }
 
   .main-inner__header::after {
     background-image: url("../img/add-background-promo.svg");
     min-width: 768px;
     width: 100%;
+    bottom: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-inner__header {
+    background-image: url("../img/background-inner-desktop.png");
+    background-size: 1200px auto;
     padding: 101px 0 120px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-inner-desktop@2x.png");
+    }
   }
 
   .main-inner__header::after {
     background-image: url("../img/add-background-promo.svg");
-    background-size: 1200px;
+    background-size: contain;
     height: 100px;
     bottom: -11px;
   }
