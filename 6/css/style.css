@@ -222,6 +222,11 @@
   background-position: center;
   padding: 83px 19px 85px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main-index__header {
+    background-image: url("../img/background-for-promo@2x.png");
+  }
+}
 .main-index__header::after {
   position: absolute;
   content: "";
@@ -245,6 +250,11 @@
     bottom: -1px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-index__header {
+    background-image: url("../img/background-tablet@2x.png");
+  }
+}
 @media (min-width: 1200px) {
   .main-index__header {
     background-image: url("../img/background-desktop.png");
@@ -258,15 +268,25 @@
     bottom: -11px;
   }
 }
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-index__header {
+    background-image: url("../img/background-desktop@2x.png");
+  }
+}
 .main-inner__header {
   position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-inner-page.png");
-  background-size: cover;
+  background-size: 320px auto;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
   padding: 52px 45px 67px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main-inner__header {
+    background-image: url("../img/background-inner-page@2x.png");
+  }
 }
 .main-inner__header::after {
   position: absolute;
@@ -280,24 +300,38 @@
 }
 @media (min-width: 768px) {
   .main-inner__header {
-    position: relative;
+    background-image: url("../img/background-inner-tablet.png");
+    background-size: 768px auto;
     padding: 95px 0 117px;
   }
   .main-inner__header::after {
     background-image: url("../img/add-background-promo.svg");
     min-width: 768px;
     width: 100%;
+    bottom: -1px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-inner__header {
+    background-image: url("../img/background-inner-tablet@2x.png");
   }
 }
 @media (min-width: 1200px) {
   .main-inner__header {
+    background-image: url("../img/background-inner-desktop.png");
+    background-size: 1200px auto;
     padding: 101px 0 120px;
   }
   .main-inner__header::after {
     background-image: url("../img/add-background-promo.svg");
-    background-size: 1200px;
+    background-size: contain;
     height: 100px;
     bottom: -11px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-inner__header {
+    background-image: url("../img/background-inner-desktop@2x.png");
   }
 }
 .hero__image {
