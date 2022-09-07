@@ -7,10 +7,12 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e7e5e5;
+  margin: 0;
 }
 
 .page__container {
+  position: relative;
   margin: 0 auto;
   width: 320px;
   min-height: 100%;
@@ -18,11 +20,29 @@
 
   @media (min-width: @tablet-width) {
     min-width: @tablet-width;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     min-width: @desktop-width;
-    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 100%;
+      background-color: #f2f2f2;
+      top: 0;
+      z-index: -1;
+    }
+
+    &::before {
+      left: -40px;
+    }
+
+    &::after {
+      right: -40px;
+    }
   }
 }
