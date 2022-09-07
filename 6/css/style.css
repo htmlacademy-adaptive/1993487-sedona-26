@@ -20,9 +20,11 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #e7e5e5;
+  margin: 0;
 }
 .page__container {
+  position: relative;
   margin: 0 auto;
   width: 320px;
   min-height: 100%;
@@ -31,13 +33,28 @@
 @media (min-width: 768px) {
   .page__container {
     min-width: 768px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
   .page__container {
     min-width: 1200px;
-    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+  .page__container::before,
+  .page__container::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 100%;
+    background-color: #f2f2f2;
+    top: 0;
+    z-index: -1;
+  }
+  .page__container::before {
+    left: -40px;
+  }
+  .page__container::after {
+    right: -40px;
   }
 }
 .visually-hidden {
@@ -1322,6 +1339,16 @@
   padding: 16px;
   margin-bottom: 16px;
   border: 0;
+  cursor: pointer;
+}
+.field__input:hover {
+  background-color: #e5e5e5;
+}
+.field__input:active,
+.field__input:focus-within {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
 }
 @media (min-width: 1200px) {
   .field__input {
@@ -1354,6 +1381,9 @@
 .field__input--change::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+.field__input--change::-webkit-input-placeholder:hover {
+  color: #000000;
+}
 .control {
   position: relative;
   display: block;
@@ -1372,9 +1402,16 @@
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 .control__icon--radio {
   border-radius: 50%;
+}
+.control__icon:hover {
+  background-color: #e5e5e5;
+}
+.control__icon:active {
+  background-color: #d5d5d5;
 }
 .control__input:checked + .control__icon::before {
   position: absolute;
@@ -1394,6 +1431,9 @@
   left: 15px;
   border-radius: 50%;
   background-color: #333333;
+}
+.control__input:checked + .control__icon--radio::before::before:active {
+  background-color: rgba(51, 51, 51, 0.3);
 }
 .button {
   font-family: "PT Sans", sans-serif;
