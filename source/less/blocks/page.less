@@ -7,7 +7,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  background-color: #e7e5e5;
+  background-color: #f2f2f2;
   margin: 0;
 }
 
@@ -17,6 +17,7 @@
   width: 320px;
   min-height: 100%;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 
   @media (min-width: @tablet-width) {
     min-width: @tablet-width;
@@ -24,25 +25,5 @@
 
   @media (min-width: @desktop-width) {
     min-width: @desktop-width;
-    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 40px;
-      height: 100%;
-      background-color: #f2f2f2;
-      top: 0;
-      z-index: -1;
-    }
-
-    &::before {
-      left: -40px;
-    }
-
-    &::after {
-      right: -40px;
-    }
   }
 }
