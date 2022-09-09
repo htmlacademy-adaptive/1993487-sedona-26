@@ -2,11 +2,15 @@
   position: relative;
   background-color: #acd3e3;
   background-image: url("../img/background-for-promo.png");
-  background-size: cover;
+  background-size: 320px auto;
   background-repeat: no-repeat;
   max-width: 100%;
   background-position: center;
-  padding: 90px 19px 85px;
+  padding: 83px 19px 85px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-for-promo@2x.png");
+  }
 }
 
 .main-index__header::after {
@@ -22,26 +26,37 @@
 
 @media (min-width: @tablet-width) {
   .main-index__header {
-    position: relative;
+    background-image: url("../img/background-tablet.png");
+    background-size: 768px auto;
     padding: 77px 0 91px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-tablet@2x.png");
+    }
   }
 
   .main-index__header::after {
     background-image: url("../img/add-background-promo.svg");
     min-width: 768px;
     width: 100%;
+    bottom: -1px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-index__header {
-    position: relative;
-    padding: 78px 0 90px;
+    background-image: url("../img/background-desktop.png");
+    background-size: 1200px auto;
+    padding: 77px 0 90px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-desktop@2x.png");
+    }
   }
 
   .main-index__header::after {
     background-image: url("../img/add-background-promo.svg");
-    background-size: cover;
+    background-size: contain;
     height: 100px;
     bottom: -11px;
   }

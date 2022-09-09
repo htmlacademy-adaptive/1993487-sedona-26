@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -35,7 +39,11 @@
       <main class="main-inner">
         <header class="main-inner__header hero-inner-page">
           <h1 class="visually-hidden">Sedona.</h1>
-          <img class="hero-inner-page__image" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/sedona-tablet.svg">
+            <img class="hero-inner-page__image" src="./img/sedona.svg" width="229" height="39" alt="Sedona.">
+          </picture>
         </header>
         <section class="catalog">
           <div class="catalog__header">
@@ -45,7 +53,11 @@
           <ul class="catalog__list reset-list">
             <li class="catalog__item catalog__item--space foto-card">
               <a class="foto-card__link" href="#">
-                <img class="foto-card__image" src="./img/catalog-foto-space.jpg" width="280" height="280" alt="Неродные просторы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/catalog-foto-space-desktop.jpg 1x, ./img/catalog-foto-space-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/catalog-foto-space-tablet.jpg 1x, ./img/catalog-foto-space-tablet@2x.jpg 2x">
+                  <img class="foto-card__image" src="./img/catalog-foto-space-phone.jpg" srcset="./img/catalog-foto-space-phone@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
+                </picture>
               </a>
               <div class="foto-card__wrapper foto-card__wrapper--space">
                 <div class="foto-card__wrapper-description">
@@ -65,7 +77,11 @@
             </li>
             <li class="catalog__item foto-card">
               <a class="foto-card__link" href="#">
-                <img class="foto-card__image" src="./img/catalog-foto-flora.jpg" width="280" height="280" alt="Местная растительность.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/catalog-foto-flora-desktop.jpg 1x, ./img/catalog-foto-flora-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/catalog-foto-flora-tablet.jpg 1x, ./img/catalog-foto-flora-tablet@2x.jpg 2x">
+                  <img class="foto-card__image" src="./img/catalog-foto-flora-phone.jpg" srcset="./img/catalog-foto-flora-phone@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
+                </picture>
               </a>
               <div class="foto-card__wrapper">
                 <div class="foto-card__wrapper-description">
@@ -85,9 +101,13 @@
             </li>
             <li class="catalog__item foto-card">
               <a class="foto-card__link" href="#">
-                <img class="foto-card__image" src="./img/catalog-foto-road.jpg" width="280" height="280" alt="Дорога на север.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/catalog-foto-road-desktop.jpg 1x, ./img/catalog-foto-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/catalog-foto-road-tablet.jpg 1x, ./img/catalog-foto-road-tablet@2x.jpg 2x">
+                  <img class="foto-card__image" src="./img/catalog-foto-road-phone.jpg" srcset="./img/catalog-foto-road-phone@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+                </picture>
               </a>
-              <div class="foto-card__wrapper">
+              <div class="foto-card__wrapper foto-card__wrapper--background">
                 <div class="foto-card__wrapper-description">
                   <p class="foto-card__description">Дорога на север</p>
                   <p class="foto-card__author">Автор фото: Петр</p>
@@ -105,7 +125,11 @@
             </li>
             <li class="catalog__item foto-card">
               <a class="foto-card__link" href="#">
-                <img class="foto-card__image" src="./img/catalog-foto-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/catalog-foto-bridge-desktop.jpg 1x, ./img/catalog-foto-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/catalog-foto-bridge-tablet.jpg 1x, ./img/catalog-foto-bridge-tablet@2x.jpg 2x">
+                  <img class="foto-card__image" src="./img/catalog-foto-bridge-phone.jpg" srcset="./img/catalog-foto-bridge-phone@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                </picture>
               </a>
               <div class="foto-card__wrapper">
                 <div class="foto-card__wrapper-description">
