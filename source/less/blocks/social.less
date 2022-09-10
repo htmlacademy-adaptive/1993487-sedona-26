@@ -3,10 +3,33 @@
   grid-template-columns: repeat(3, 48px);
   column-gap: 6px;
   margin-bottom: 40px;
-}
 
-@media (min-width: @tablet-width) {
-  .social__list {
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .social__image {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.social__image {
+  color: #ffffff;
 }

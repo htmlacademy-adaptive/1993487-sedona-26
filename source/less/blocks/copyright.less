@@ -4,20 +4,34 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 12px 0 0;
+  color: #000000;
 }
 
 .copyright {
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__image,
+  &:hover .copyright__title {
+    color: #81b3d2;
+  }
+
+  &:active .copyright__image,
+  &:active .copyright__title {
+    color: #b3b3b3;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .copyright {
-    margin-left: auto;
-  }
+.copyright__image {
+  color: #000000;
 }
