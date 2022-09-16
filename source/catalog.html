@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.png">
@@ -72,7 +72,7 @@
         <section class="catalog">
           <div class="catalog__header">
             <h2 class="catalog__title heading-index heading-index--max">Фото и видео</h2>
-            <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии&nbspпомогут вам забыть о политике и экономике.</p>
+            <p class="catalog__description">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="catalog__list reset-list">
             <li class="catalog__item catalog__item--space foto-card">
@@ -129,7 +129,7 @@
                 </div>
               </div>
             </li>
-            <li class="catalog__item foto-card">
+            <li class="catalog__item catalog__item--road foto-card">
               <a class="foto-card__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog-foto-road-desktop.webp 1x, ./img/catalog-foto-road-desktop@2x.webp 2x">
@@ -140,7 +140,7 @@
                   <img class="foto-card__image" src="./img/catalog-foto-road-phone.jpg" srcset="./img/catalog-foto-road-phone@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
                 </picture>
               </a>
-              <div class="foto-card__wrapper foto-card__wrapper--background">
+              <div class="foto-card__wrapper foto-card__wrapper--road">
                 <div class="foto-card__wrapper-description">
                   <p class="foto-card__description">Дорога на север</p>
                   <p class="foto-card__author">Автор фото: Петр</p>
@@ -167,7 +167,7 @@
                   <img class="foto-card__image" src="./img/catalog-foto-bridge-phone.jpg" srcset="./img/catalog-foto-bridge-phone@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
                 </picture>
               </a>
-              <div class="foto-card__wrapper">
+              <div class="foto-card__wrapper foto-card__wrapper--bridge">
                 <div class="foto-card__wrapper-description">
                   <p class="foto-card__description">Мост дьявола</p>
                   <p class="foto-card__author">Автор фото: Антон</p>
@@ -200,7 +200,7 @@
           </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer-catalog">
         <div class="page-footer__invitation invitation">
           <a class="invitation__link" href="#">#VISITSEDONA</a>
         </div>
@@ -217,7 +217,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
-                <svg class="social__image width="24" height="24">
+                <svg class="social__image" width="24" height="24">
                   <use xlink:href="#telegram"></use>
                 </svg>
                 <span class="visually-hidden">Телеграм</span>
@@ -225,7 +225,7 @@
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademy" target="_blank">
-                <svg class="social__image width="24" height="24">
+                <svg class="social__image" width="24" height="24">
                   <use xlink:href="#youtube"></use>
                 </svg>
                 <span class="visually-hidden">Ютуб</span>
