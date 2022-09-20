@@ -25,25 +25,40 @@
 
   @media (min-width: @tablet-width) {
     width: 307px;
-    padding: 50px 47px 49px;
+    padding: 48px 47px 50px;
+    margin-top: 282px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 244px;
   }
 }
 
 .modal__title {
   margin: 0 0 25px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .modal__description {
   .identical-styles();
   margin: 0 0 28px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 47px 0;
+  }
 }
 
 .modal__button {
   align-self: center;
+  font-size: 18px;
   width: 180px;
   padding: 18px 64px 14px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
     width: 272px;
     padding: 18px 108px 13px;
   }

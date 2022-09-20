@@ -1,7 +1,7 @@
 .form__group {
   border: 0;
   margin: 0;
-  padding: 0 20px 24px;
+  padding: 0 20px;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
 
@@ -18,7 +18,7 @@
       width: 123px;
       height: 1px;
       background-color: #dbdbdb;
-      top: -40px;
+      top: -42px;
     }
 
     @media (min-width: @desktop-width) {
@@ -35,16 +35,15 @@
   }
 
   &--introduce {
-    padding-bottom: 39px;
+    padding-bottom: 23px;
 
     @media (min-width: @tablet-width) {
       width: 323px;
-      margin-right: 43px;
     }
 
     @media (min-width: @desktop-width) {
       width: 493px;
-      margin-right: 63px;
+      padding-right: 30px;
     }
 
     &::before,
@@ -54,7 +53,7 @@
   }
 
   &--contacts {
-    padding-bottom: 34px;
+    padding-bottom: 18px;
 
     @media (min-width: @tablet-width) {
       width: 324px;
@@ -124,12 +123,12 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-bottom: 48px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 960px;
-    padding-bottom: 56px;
+    padding-bottom: 32px;
   }
 
   &::before {
@@ -149,16 +148,36 @@
 }
 
 .form__title {
-  padding-top: 24px;
+  padding: 24px 0 0;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+
+  &--label {
+    display: block;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 0;
     margin-bottom: 28px;
+    width: 320px;
+
+    &--contacts {
+      padding-left: 5px;
+    }
   }
 
-  &--label {
-    display: block;
+  @media (min-width: @desktop-width) {
+    width: 400px;
+
+    &--contacts {
+      padding-left: 2px;
+    }
+
+    &--introduce {
+      padding-left: 30px;
+    }
   }
 }
 
@@ -221,9 +240,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 17px 32px;
-    grid-template-columns: repeat(3, 280px);
-    column-gap: 28px;
+    padding: 17px 53px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 62px;
   }
 }
 
@@ -238,8 +257,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 31px 41px 31px 44px;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 64px;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 60px;
   }
 }
 
@@ -262,13 +281,18 @@
 }
 
 .form__note {
-  padding-left: 143px;
+  padding-left: 144px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 185px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 162px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 244px;
+    padding-left: 222px;
   }
 }
