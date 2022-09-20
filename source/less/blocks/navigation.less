@@ -154,16 +154,31 @@
     display: block;
     min-height: 0;
     z-index: 2;
+    margin-bottom: 56px;
   }
 
   .navigation--nojs .navigation__item {
     display: block;
   }
 
+  .navigation--nojs .navigation__item--academy::after {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
   .navigation--nojs .navigation__item--active {
     display: block;
     background-color: #81b3d2;
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  .navigation--nojs .main-header__logo {
+    bottom: -100px;
   }
 }
 

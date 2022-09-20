@@ -7,23 +7,37 @@
   flex-direction: column;
   width: 280px;
   margin: auto;
-  padding: 39px 20px 20px;
+  padding: 38px 20px 20px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
   @media (min-width: @tablet-width) {
     width: 458px;
-    padding: 57px 91px 44px;
+    padding: 52px 91px 44px;
+    margin-top: 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 50px;
+    margin-top: 145px;
   }
 }
 
 .modal-feedback__title {
   margin: 0 0 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .modal-feedback__description {
   padding: 0 18px;
-  margin-bottom: 36px;
+  margin-bottom: 52px;
 }
 
 .modal-feedback__button-wrapper {
@@ -39,10 +53,12 @@
 
 .modal-feedback__button {
   width: 280px;
+  font-size: 18px;
   padding: 18px 62px 14px 60px;
 
   @media (min-width: @tablet-width) {
     width: 458px;
+    font-size: 21px;
     padding: 18px 140px 13px;
   }
 }
