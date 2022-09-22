@@ -1,5 +1,47 @@
 .map {
-  background-color: #eeeeee;
+  position: relative;
+  height: 350px;
+  background-image: url("../img/map-mobile.png");
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: center;
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.png");
+    background-size: 768px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-desktop.png");
+    background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
+  }
+}
+
+.map::before {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/small-icons/map-marker.svg");
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
 }
 
 .map iframe {
