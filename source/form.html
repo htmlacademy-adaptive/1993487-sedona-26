@@ -20,7 +20,7 @@
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона.">
         </a>
-        <nav class="main-header__navigation navigation navigation--closed">
+        <nav class="main-header__navigation navigation navigation--closed navigation--nojs"> <!-- переключение класса navigation--closed на navigation--opened -->
           <button class="navigation__toggle header-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -89,21 +89,21 @@
                 <li class="form__item">
                   <label class="control radio">
                     <input class="visually-hidden control__input" type="radio" name="impression" value="positive" checked>
-                    <span class="control__icon control__icon--radio"></span>
+                    <span tabindex="0" class="control__icon control__icon--radio"></span>
                     <span class="control__label">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control radio">
                     <input class="visually-hidden control__input" type="radio" name="impression" value="negative">
-                    <span class="control__icon control__icon--radio"></span>
+                    <span tabindex="0" class="control__icon control__icon--radio"></span>
                     <span class="control__label">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control control--last-item radio">
                     <input class="visually-hidden control__input" type="radio" name="impression" value="no-answer">
-                    <span class="control__icon control__icon--radio"></span>
+                    <span tabindex="0" class="control__icon control__icon--radio"></span>
                     <span class="control__label">Затрудняюсь ответить</span>
                   </label>
                 </li>
@@ -115,28 +115,28 @@
                 <li class="form__item">
                   <label class="control checkbox">
                     <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
-                    <span class="control__icon"></span>
+                    <span tabindex="0" class="control__icon"></span>
                     <span class="control__label">Мост&nbsp;Дьявола</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control checkbox">
                     <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
-                    <span class="control__icon"></span>
+                    <span tabindex="0" class="control__icon"></span>
                     <span class="control__label">Гора-&nbsp;Колокол</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control checkbox">
                     <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
-                    <span class="control__icon"></span>
+                    <span tabindex="0" class="control__icon"></span>
                     <span class="control__label">Слайд-&nbsp;парк</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="control control--last-item checkbox">
                     <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
-                    <span class="control__icon"></span>
+                    <span tabindex="0" class="control__icon"></span>
                     <span class="control__label">Красные&nbsp;скалы</span>
                   </label>
                 </li>
@@ -144,7 +144,7 @@
             </fieldset>
             <div class="form__group form__group--feedback field">
               <div class="form__title">
-                <label class="form__title--label heading-index" for="user-message">Опишите свои эмоции:</label>
+                <label class="form__title-textarea heading-index" for="user-message">Опишите свои эмоции:</label>
               </div>
               <textarea class="field__input field__input--change field__input--textarea" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="form__button-wrapper">
@@ -205,10 +205,10 @@
           <button class="modal__button button" type="button">Ok</button>
         </div>
       </div>
-      <div class="modal-container modal-container-feedback--closed">
-        <div class="modal-container__feedback modal-feedback">
+      <div class="modal-container-feedback modal-container-feedback--closed">
+        <div class="modal-container-feedback__feedback modal-feedback">
           <h2 class="modal-feedback__title heading-index heading-index--max">Ваш отзыв отправлен!</h2>
-          <p class="modal-feedback__description modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal-feedback__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
           <div class="modal-feedback__button-wrapper">
             <button class="modal-feedback__button button" type="button">Закрыть окно</button>
           </div>
